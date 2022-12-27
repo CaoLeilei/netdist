@@ -1,5 +1,72 @@
-.container-card {
-  border: none;
-  border-radius: 0;
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #f9fafe;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", STHeitiSC-Light, "Microsoft YaHei", "微软雅黑", SimSun, sans-serif;
+}
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f9fafe;
+}
+.menu-aside {
+  background: #ffffff;
+  border-right: 1px solid #ebf0f6;
+}
+.menu-aside .aside-inner {
+  position: relative;
+  box-sizing: border-box;
+  padding: 24px;
+}
+.menu-aside .aside-header .button {
+  width: 100%;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.menu-aside .menu {
+  margin-top: 24px !important;
+  border-right: none;
+}
+.menu-aside .menu-item {
+  height: 36px;
+  color: #6c757d;
+  margin-top: 6px;
+  border-radius: 3px;
+}
+.menu-aside .menu-item.is-active {
+  background: #e9f3ff;
+  color: #444444;
+}
+.menu-aside .menu-item:hover {
+  color: #444444;
+}
+.menu-aside .menu-item .bi {
+  margin-right: 12px;
+}
+.right-container {
+  box-sizing: border-box;
+  margin-left: 8px;
+  background: #ffffff;
+  border-left: 1px solid #ebf0f6;
+}
+.main-header .header-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .header-input {
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
