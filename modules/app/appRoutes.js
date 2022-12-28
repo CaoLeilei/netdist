@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const { sequelize } = require('../../data/sequelize');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
