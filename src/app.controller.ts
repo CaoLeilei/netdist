@@ -1,9 +1,15 @@
-import { Controller, Get } from '@nestjs/common';
+import {Controller, Get, LoggerService} from '@nestjs/common';
 import { AppService } from './app.service';
+import { ConfigService } from '@nestjs/config';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly configService: ConfigService,
+  ) {
+    console.log(configService.get<string>('ENV'));
+  }
 
   @Get()
   getHello(): string {
